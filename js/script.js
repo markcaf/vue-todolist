@@ -29,13 +29,28 @@ const app = new Vue(
                     done: true
                 },   
             ],
-              
+            
+            newToDo: ""
         },
 
         methods: {
             removeTodo: function (index) {
                 this.todos.splice(index, 1)
-              }
+            },
+
+            addToList: function (currentToDoEl) {
+                if (currentToDoEl == ""){
+                    console.warn('Attenzione, stai inserendo un elemento vuoto');
+                } else {
+                    this.todos.push(
+                        {
+                            text: currentToDoEl,
+                            done: false,
+                        }
+                    );
+                    this.newToDo = '';
+                }
+            }
         },
 
         created(){

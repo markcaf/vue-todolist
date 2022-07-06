@@ -27,7 +27,16 @@
                             <div><i @click="removeTodo(index)" class="fa-solid fa-square-xmark"></i></div>
                         </li>
                         <!-- <li class="list-group-item text-decoration-line-through">An item</li> -->
-                      </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row text-center mt-3">
+                <div class="col-12 mb-2">
+                    <input type="text" v-model.trim="newToDo">
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" @click="addToList(newToDo)">Aggiungi</button>
                 </div>
             </div>
         </div>
