@@ -1,3 +1,8 @@
 #app .container{
     max-width: 600px;
 }
+
+#app .fa-square-xmark:hover{
+    color: red;
+    cursor: pointer;
+}
