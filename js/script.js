@@ -33,11 +33,13 @@ const app = new Vue(
         },
 
         methods: {
-           
+            removeTodo: function (index) {
+                this.todos.splice(index, 1)
+              }
         },
 
         created(){
-
+            
         },
     }
 );
