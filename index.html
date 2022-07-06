@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-12">
                     <ul class="list-group text-center">
-                        <li class="list-group-item" v-for="todo in todos">{{ todo.text }}</li>
+                        <li :class="{ 'text-decoration-line-through': todo.done }" class="list-group-item" v-for="todo in todos">{{ todo.text }}</li>
                         <!-- <li class="list-group-item text-decoration-line-through">An item</li> -->
                       </ul>
                 </div>

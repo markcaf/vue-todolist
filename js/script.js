@@ -16,8 +16,20 @@ const app = new Vue(
                     text: 'Fare il bucato',
                     done: false
                 },
-            ]
-            
+                {
+                    text: 'Preparare il pranzo',
+                    done: true
+                },
+                {
+                    text: 'Preparare la cena',
+                    done: false
+                },
+                {
+                    text: 'Vedere l\'ultimo episodio di Stranger Things',
+                    done: true
+                },   
+            ],
+              
         },
 
         methods: {
